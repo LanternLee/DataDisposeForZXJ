@@ -51,6 +51,12 @@
     <ClCompile Include="libreryTypeSearch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="newFeatureOfCard.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="otherFeature.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="date.h">
@@ -60,6 +66,12 @@
       <Filter>源文件</Filter>
     </ClInclude>
     <ClInclude Include="dataModel.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="library.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OtherDataModel.h">
       <Filter>源文件</Filter>
     </ClInclude>
   </ItemGroup>

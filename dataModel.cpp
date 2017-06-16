@@ -1,6 +1,22 @@
 #include"dataModel.h"
 
-void DataModel::consume(int month, float money, float remain){
+const string DataModel::Good[12] = {
+	"淋浴",
+	"开水",
+	"其他",
+	"洗衣房",
+	"文印中心",
+	"教务处",
+	"图书馆",
+	"食堂",
+	"校车",
+	"超市",
+	"校医院",
+	"",
+};
+
+void DataModel::consume(int month, float money, float remain,string goodType,int weekDay){
+	month = month - 1;
 	if (month < 0 || money < 0 || remain < 0){
 		return;
 	}
@@ -16,6 +32,25 @@ void DataModel::consume(int month, float money, float remain){
 	_data[month][4] = remain > _data[month][4] ? remain : _data[month][4];
 	//min remain
 	_data[month][5] = remain < _data[month][5] ? remain : _data[month][5];
+
+	int type = search(goodType);
+	if (type != -1){
+		this->goodType[month][type] += money;
+		this->goodCnt[month][type]++;
+	}
+	if (weekDay <= 0 || weekDay > 7){
+		return;
+	}
+	else{
+		if (weekDay <= 5){
+			weekCnt[month][0]++;
+			weekConsume[month][0] += money;
+		}
+		else{
+			weekCnt[month][1]++;
+			weekConsume[month][1] += money;
+		}
+	}
 }
 
 void DataModel::outputData(ofstream& of){

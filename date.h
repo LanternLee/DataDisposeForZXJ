@@ -13,6 +13,7 @@ public:
 	int day;
 	int mon;
 	int weekday = 0;
+	int hour;
 
 	Date(){}
 
@@ -48,6 +49,15 @@ public:
 		}
 		tmp[i] = '\0';
 		day = atoi(tmp);
+
+		//add hour prase
+		size_t beg = s.find(' ', p);
+		if (beg != -1){
+			size_t end = s.find(':', beg);
+			if (end != -1){
+				hour = atoi(s.substr(beg, end - beg).c_str());
+			}
+		}
 	}
 
 	Date nextDay(){
@@ -76,6 +86,9 @@ public:
 		return ret;
 	}
 
+	bool operator==(Date d){
+		return this->year == d.year && this->mon == d.mon && this->day == d.day;
+	}
 };
 
 #endif
