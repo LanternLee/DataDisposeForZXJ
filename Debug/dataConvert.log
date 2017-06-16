@@ -1,0 +1,28 @@
+﻿生成启动时间为 2017/6/16 16:25:49。
+     1>项目“C:\Users\root\documents\visual studio 2013\Projects\dataConvert\dataConvert\dataConvert.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt test.cpp
+         test.cpp
+     1>c:\users\root\documents\visual studio 2013\projects\dataconvert\dataconvert\date.h(45): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\root\documents\visual studio 2013\projects\dataconvert\dataconvert\cardparase.h(40): warning C4553: “==”: 运算符不起任何作用；是否是有意使用“=”的?
+     1>c:\users\root\documents\visual studio 2013\projects\dataconvert\dataconvert\cardparase.h(23): warning C4101: “i”: 未引用的局部变量
+     1>c:\users\root\documents\visual studio 2013\projects\dataconvert\dataconvert\cardparase.h(25): warning C4101: “subS”: 未引用的局部变量
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\root\documents\visual studio 2013\Projects\dataConvert\Debug\dataConvert.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\root\documents\visual studio 2013\Projects\dataConvert\Debug\dataConvert.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\root\documents\visual studio 2013\Projects\dataConvert\Debug\dataConvert.lib" /MACHINE:X86 Debug\CardMain.obj
+         Debug\dataAnalyse.obj
+         Debug\dataBuild.obj
+         Debug\dataExpand.obj
+         Debug\dataModel.obj
+         Debug\libreryTypeSearch.obj
+         Debug\main.obj
+         Debug\paraseAsGraph.obj
+         Debug\paraseConsume.obj
+         Debug\subsidy.obj
+         Debug\test.obj
+         Debug\typeSearch.obj
+         dataConvert.vcxproj -> C:\Users\root\documents\visual studio 2013\Projects\dataConvert\Debug\dataConvert.exe
+     1>已完成生成项目“C:\Users\root\documents\visual studio 2013\Projects\dataConvert\dataConvert\dataConvert.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.07
