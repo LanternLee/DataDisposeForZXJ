@@ -94,9 +94,11 @@
     <ClCompile Include="typeSearch.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="borrowParase.h" />
     <ClInclude Include="CardParase.h" />
     <ClInclude Include="dataModel.h" />
     <ClInclude Include="date.h" />
+    <ClInclude Include="dormparase.h" />
     <ClInclude Include="library.h" />
     <ClInclude Include="OtherDataModel.h" />
   </ItemGroup>

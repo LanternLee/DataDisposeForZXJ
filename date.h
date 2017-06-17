@@ -13,7 +13,7 @@ public:
 	int day;
 	int mon;
 	int weekday = 0;
-	int hour;
+	int hour = -1;
 
 	Date(){}
 
@@ -88,6 +88,14 @@ public:
 
 	bool operator==(Date d){
 		return this->year == d.year && this->mon == d.mon && this->day == d.day;
+	}
+
+	Date operator=(Date d){
+		this->year = d.year;
+		this->mon = d.mon;
+		this->day = d.day;
+
+		return *this;
 	}
 };
 

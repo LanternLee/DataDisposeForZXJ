@@ -113,16 +113,30 @@ int main(){
 			for (int j = 0; j < 12; j++){
 				for (int k = 0; k < 12; k++){
 					of << data->getGootTime(j, data->Good[k]) << ' ';
+				}
+			}
+			for (int j = 0; j < 12; j++){
+				for (int k = 0; k < 12; k++){
 					of << data->getGoodConsume(j, data->Good[k]) << ' ';
 				}
 			}
 			//weekday consume
 			for (int j = 0; j < 12; j++){
 				of << data->getWeekdayConsume(j) << ' ';
+			}
+			for (int j = 0; j < 12; j++){
 				of << data->getWeekdayCnt(j) << ' ';
+			}
+			for (int j = 0; j < 12; j++){
 				of << data->getWeekdayAvg(j) << ' ';
+			}
+			for (int j = 0; j < 12; j++){
 				of << data->getWeekendConsume(j) << ' ';
+			}
+			for (int j = 0; j < 12; j++){
 				of << data->getWeekendCnt(j) << ' ';
+			}
+			for (int j = 0; j < 12; j++){
 				of << data->getWeekendAvg(j) << ' ';
 			}
 			of << endl;

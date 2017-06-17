@@ -74,5 +74,11 @@
     <ClInclude Include="OtherDataModel.h">
       <Filter>源文件</Filter>
     </ClInclude>
+    <ClInclude Include="dormparase.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="borrowParase.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

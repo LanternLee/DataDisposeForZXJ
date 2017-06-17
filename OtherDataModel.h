@@ -1,6 +1,7 @@
 #include<iostream>
 #include<string>
 #include<vector>
+#define BOUNDCHECK m<0||m>=12
 
 using namespace std;
 
@@ -48,5 +49,35 @@ public:
 				libRecord[mon][2]++;
 			}
 		}
+	}
+
+	int getBorrowNum(int m){
+		if (BOUNDCHECK) return 0;
+		return bookRecord[m];
+	}
+
+	int getLibraryDay(int m){
+		if (BOUNDCHECK)return 0;
+		return libRecord[m][0];
+	}
+
+	int getLibraryWeekend(int m){
+		if (BOUNDCHECK) return 0;
+		return libRecord[m][1];
+	}
+
+	int getLibraryNight(int m){
+		if (BOUNDCHECK) return 0;
+		return libRecord[m][2];
+	}
+
+	int getDormNight(int m){
+		if (BOUNDCHECK) return 0;
+		return dormRecord[m][0];
+	}
+
+	int getDormWeekend(int m){
+		if (BOUNDCHECK) return 0;
+		return dormRecord[m][1];
 	}
 };
