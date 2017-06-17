@@ -30,8 +30,8 @@ public:
 		//parase kind
 		//skip id
 		startP = s.find(',', startP);
-		startP += 1;    //s[startP]==\"
-		endP = s.find('\"', ++startP);
+		startP += 2;    //s[startP]==\"
+		endP = s.find('\"', startP);
 		tmp = s.substr(startP, endP - startP);
 		if (tmp.compare("POS消费") == 0){
 			kind = true;
@@ -46,20 +46,20 @@ public:
 		//startP = s.find(',', startP) + 1;    //s[startP] is pattern
 		//startP = s.find(',', startP) + 2;	 //s[startP] is date
 		//place info
-		startP = endP + 2;
-		endP = s.find('\"', ++startP);
+		startP = endP + 3;
+		endP = s.find('\"', startP);
 		tmp = s.substr(startP, endP - startP);
 		place = tmp;
 
 		//good type
-		startP = endP + 2;
-		endP = s.find('\"', ++startP);
+		startP = endP + 3;
+		endP = s.find('\"', startP);
 		tmp = s.substr(startP, endP - startP);
 		good = tmp;
 
-		startP = endP + 2;
-		endP = s.find(',', ++startP);
-		tmp = s.substr(startP, endP - startP);
+		startP = endP + 3;
+		endP = s.find(',', startP);
+		tmp = s.substr(startP, endP - startP); 
 		_date = new Date(tmp);
 
 		//parase money

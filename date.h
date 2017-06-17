@@ -63,7 +63,7 @@ public:
 	Date nextDay(){
 		Date ret;
 		ret.weekday = weekday + 1;
-		ret.weekday > 7 ? 1 : ret.weekday;
+		ret.weekday = ret.weekday > 7 ? 1 : ret.weekday;
 
 		if (day == dayOfMon[mon]){
 			ret.day = 1;
@@ -94,8 +94,33 @@ public:
 		this->year = d.year;
 		this->mon = d.mon;
 		this->day = d.day;
+		this->weekday = d.weekday;
+		this->hour = d.hour;
 
 		return *this;
+	}
+
+	int compare(Date d){
+		if (this->year != d.year){
+			if (this->year > d.year){
+				return 1;
+			}
+			else return -1;
+		}
+		else if (this->mon!=d.mon){
+			if (this->mon > d.mon){
+				return 1;
+
+			}
+			else return -1;
+		}
+		else if (this->day != d.day){
+			if (this->day > d.day){
+				return 1;
+			}
+			else return -1;
+		}
+		else return 0;
 	}
 };
 

@@ -1,7 +1,7 @@
 #ifndef DATAMOCEL
 #define DATAMODEL
 #include<fstream>
-#define BOUNDCHECK i>12||i<=0
+#define BOUNDCHECK i>=12||i<0
 
 using namespace std;
 

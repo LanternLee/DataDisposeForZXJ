@@ -48,6 +48,13 @@ int main(){
 		//deal with library record
 		int id = lib.id;
 		Date date = lib.date;
+
+		//cout << id << " :";
+		//cout << date.year << date.mon << date.day << endl;
+		if (date.compare(globalDate) == -1){
+			cnt++;
+			continue;
+		}
 		while (!(globalDate == date)){
 			globalDate = globalDate.nextDay();
 		}
@@ -80,6 +87,10 @@ int main(){
 		Dorm dorm(str);
 		
 		int id = dorm.id;
+		if (dorm.date.compare(globalDate) == -1){
+			cnt++;
+			continue;
+		}
 		while (!(globalDate == dorm.date)){
 			globalDate = globalDate.nextDay();
 		}
@@ -112,6 +123,10 @@ int main(){
 		int id = bor.id;
 		Date date = bor.date;
 
+		if (date.compare(globalDate) == -1){
+			cnt++;
+			continue;
+		}
 		while (!(globalDate == date)){
 			globalDate = globalDate.nextDay();
 		}
